@@ -13,6 +13,11 @@ body{
     margin: 0 auto;
 }
 
+.imheader{
+    max-width: 100%;
+    width: 1400px;
+}
+
 .tm-header{
     clear: both;
     background: #fff;
@@ -95,6 +100,7 @@ ul, ol{
 .tm-sidebar div{
     background: #fff;
     padding: 30px;
+    width: 215px;
 }
 
 .tm-sidebar ul li a:hover{
@@ -103,9 +109,14 @@ ul, ol{
 
 .tm-sidebar ul li a{
     text-decoration: none;
-}   
+}
 
-button{
+.sub input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.submit{
     background: #3e99ff;
     color: #fff; 
 }
