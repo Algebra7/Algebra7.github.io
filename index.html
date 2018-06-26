@@ -85,9 +85,9 @@
          <div>
             <h3>Subscribe</h3>
             <form class="sub" action="#" method="post" autocomplete="off">
-               <input name="Name" type="text" placeholder="Your Name" required /><br/>
-               <input name="Email" type="text" placeholder="Your Email" required /><br/>
-               <input class="submit" type="submit" value="Submit" />
+               <input name="Name" type="text" id="name" placeholder="Your Name" required /><br/>
+               <input name="Email" type="text" id="email" placeholder="Your Email" required /><br/>
+               <input class="submit" type="submit" value="Submit" onclick="show()" />
             </form>
          </div>
          </aside>
@@ -96,6 +96,14 @@
    <footer class="tm-footer">
       copyright &copy 2018|Ahmad M Ameen
    </footer>
+
+<script type="text/javascript">
+function show(){
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    alert('Your name is '+ name +', you will be recieving every post in your email:'+ email +'. Thank you for subscribing.');
+}
+</script>
 
 </body>
 </html>
